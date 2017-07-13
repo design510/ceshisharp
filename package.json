@@ -17,7 +17,6 @@
     "jquery-file-upload-middleware": "^0.1.7",
     "moment": "^2.11.1",
     "mongoose": "^4.3.7",
-    "mongoose-schema-extend": "^0.2.0",
     "morgan": "~1.6.1",
     "multer": "^1.1.0",
     "passport": "^0.3.2",
@@ -27,5 +26,10 @@
     "shortid": "^2.2.4",
     "winston": "^2.1.1",
     "winston-mongodb": "^2.0.8"
+  },
+  "devDependencies": {
+    "extend": "^3.0.1",
+    "mongoose-schema-extend": "^0.2.2",
+    "node-extend": "^0.2.0"
   }
 }

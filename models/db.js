@@ -13,17 +13,13 @@ db.on('error', function (err) {
 exports.mongoose = mongoose;
 
 //基础Schema
-//var Schema = mongoose.Schema;
-//var base = new Schema({
-//    _id: String
-//},{collection: 'applists'});
-var base = mongoose.Schema({
+var base = new mongoose.Schema({
     //唯一键
-    _id: {type: String, unique: true},
+    _id: {type: String, unique: true}
     //创建时间
-    CreateTime: {type: Date},
-    //修改时间
-    ModifyTime: {type: Date}
-});
+    // CreateTime: {type: Date},
+    // //修改时间
+    // ModifyTime: {type: Date}
+}, {collection: 'comments', versionKey:false});
 exports.base = base;
 
