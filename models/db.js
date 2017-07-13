@@ -13,7 +13,11 @@ db.on('error', function (err) {
 exports.mongoose = mongoose;
 
 //基础Schema
-var base = new mongoose.Schema({
+//var Schema = mongoose.Schema;
+//var base = new Schema({
+//    _id: String
+//},{collection: 'applists'});
+var base = mongoose.Schema({
     //唯一键
     _id: {type: String, unique: true},
     //创建时间
