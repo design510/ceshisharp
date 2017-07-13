@@ -1,0 +1,5 @@
+{
+  "DbPath": "mongodb://localhost:27017/talk",
+  "RedisHost": "127.0.0.1",
+  "RedisPort": 6379
+}
