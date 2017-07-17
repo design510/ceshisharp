@@ -1,7 +1,7 @@
 var extend = require('mongoose-schema-extend');
 var db = require('./db'),
     mongoose = db.mongoose,
-    base = db.base;
+    baseSchema = db.baseSchema;
 // var base = baseSchema.extend({
 //     app_title: {type: String},
 //     app_downnum: {type: String},
@@ -16,8 +16,8 @@ var db = require('./db'),
 //     app_download: {type: String},
 //     app_packagename: {type: String}
 // });
-
-var appListSchema = base.extend({
+// console.log(base)
+baseSchema.add({
     app_title: String
     // 分类名称
     // CateName: {type: String},
@@ -29,4 +29,4 @@ var appListSchema = base.extend({
     // Link: {type: String}
 });
 
-exports.ApplistModel = mongoose.model('comments', appListSchema, 'comment');
+exports.ApplistModel = mongoose.model('comments', baseSchema, 'comment');

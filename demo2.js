@@ -10,3 +10,16 @@ AppList.getAllAppList(function(err, applist){
         console.log(applist)
     }
 });
+
+
+var jsonArray = [];
+jsonArray.push({
+    app_title: "ceshi001"
+});
+AppList.setAppList({app_title: "ceshi001"}, function(err, result){
+    if(err){
+        console.log(err);
+    }else{
+        console.log(result)
+    }
+});
